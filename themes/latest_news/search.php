@@ -1,7 +1,7 @@
 <?php get_header();?>
 <br/>
 <div class="container">
-  <h4>Notícias recentes</h4>
+  <h4>Resultados da busca por: <?php echo get_search_query();?></h4>
   <br/>
     <div class="row">
         <div class="col-md-9">

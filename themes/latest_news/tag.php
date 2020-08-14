@@ -1,7 +1,9 @@
-<?php get_header();?>
+<?php 
+/* Template para páginas de categorias */
+get_header();?>
 <br/>
 <div class="container">
-  <h4>Notícias recentes</h4>
+  <h4>Tag: <?php single_tag_title();?></h4>
   <br/>
     <div class="row">
         <div class="col-md-9">
@@ -25,7 +27,7 @@
              endwhile;
              echo "</ul>";
             else:
-             echo "<p>Ainda não há nenhuma notícia publicada.</p>";
+             echo "<p>Ainda não há nenhuma notícia publicada nesta categoria.</p>";
             endif;
           ?>
         </div>
